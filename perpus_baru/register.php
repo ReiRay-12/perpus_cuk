@@ -8,10 +8,35 @@ if(isset($_POST["register"])){
 }
 ?>
 
-<h2>Register</h2>
-<form method="post">
-<input name="username"><br>
-<input type="password" name="password"><br>
-<input type="password" name="password2"><br>
-<button name="register">Daftar</button>
-</form>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Sistem Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daftar Anggota Baru</h1>
+    <form method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="password2">Konfirmasi Password:</label>
+            <input type="password" name="password2" id="password2" required>
+        </div>
+        <br>
+        <button name="register">Daftar</button>
+    </form>
+    <br>
+    <a href="login.php">Sudah punya akun? Login di sini</a>
+</body>
+</html>
